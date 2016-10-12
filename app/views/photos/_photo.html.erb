@@ -1,0 +1,10 @@
+<div class="card">
+	<% @photos.each do |photo| %>
+	<div class="card-block">
+		<%= photo.username%>
+	</div>
+	<div class="card-block">
+		<%= image_tag photo.url %>
+	</div>
+	<%end %>
+</div>
