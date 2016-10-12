@@ -1,5 +1,7 @@
+<h1>Photos</h1>
+
 <div class="card">
 	<% @photos.each do |photo| %>
-	<%= render photo%>
-	<%end%>
+		<%= render 'photo', photo: photo %>
+	<% end %>
 </div>
